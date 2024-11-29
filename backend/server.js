@@ -9,10 +9,11 @@ app.get('/joke', async (req, res) => {
     const response = await axios.get('https://official-joke-api.appspot.com/random_joke');
     res.json(response.data);
   } catch (error) {
-    res.status(500).json({ error: 'Error fetching joke' });
+    res.status(500).json({ error: 'Error al obtener el chiste' });
   }
 });
 
+//Puerto listo en 3000
 app.listen(port, () => {
-  console.log(`Backend listening at http://localhost:${port}`);
+  console.log(`Back corriendo en http://localhost:${port}`);
 });
