@@ -18,6 +18,7 @@ Para construir las imágenes de Docker ejecuta el comando:
 ```
 docker build -t vue-app .
 
+
 ```
 
 Este comando crea una imagen Docker para el frontend y backend.
@@ -27,7 +28,7 @@ Este comando crea una imagen Docker para el frontend y backend.
 Para levantar los contenedores de Docker, ejecuta:
 
 ```
-docker run -p 8080:8080
+docker run -p 8080:80 vue-app
 ```
 
 Esto lanza tanto el frontend como el backend, para acceder a la aplicación en **http://localhost:8080**.
