@@ -16,6 +16,8 @@ cd vue-chistes-app
 Para construir las imágenes de Docker ejecuta el comando:
 
 ```
+cd vue-app
+cd frontend
 docker build -t vue-app .
 
 
