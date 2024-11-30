@@ -1,19 +1,14 @@
-const express = require('express');
-const axios = require('axios');
+import express from 'express';
+import cors from 'cors';
 const app = express();
-const port = 3000;
 
-// Ruta para obtener un chiste
-app.get('/joke', async (req, res) => {
-  try {
-    const response = await axios.get('https://official-joke-api.appspot.com/random_joke');
-    res.json(response.data);
-  } catch (error) {
-    res.status(500).json({ error: 'Error al obtener el chiste' });
-  }
+app.use(cors()); // Habilita CORS para todas las solicitudes
+
+app.get('/api/joke', (req, res) => {
+  res.json({ joke: "Why don’t skeletons fight each other? They don’t have the guts." });
 });
 
-//Puerto listo en 3000
+const port = 3000;
 app.listen(port, () => {
-  console.log(`Back corriendo en http://localhost:${port}`);
+  console.log(`Backend running at http://localhost:${port}`);
 });
