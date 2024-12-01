@@ -45,8 +45,6 @@ También esta implementado "lazy loading" para cargar las vistas de manera efici
 
 - **Backend (Node.js y Express):** En el backend, se usa **Node.js** con el framework **Express** para crear una pequeña API que sirve los chistes.
 
-- **Docker:** Docker se usa para contenerizar la aplicación, facilitando la configuración y despliegue. Todo el frontend y backend están en contenedores que puedes levantar fácilmente con Docker Compose.
+- **Docker:** Docker se usa para contenerizar la aplicación, facilitando la configuración y despliegue.
 
-- **Lazy Loading:** Hemos implementado lazy loading para que el frontend solo cargue lo que necesita.
----
 
